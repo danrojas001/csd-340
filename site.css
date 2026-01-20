@@ -1,0 +1,30 @@
+#ontainer {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    background-color: cadetblue;
+    color: black;
+    border: 1px;
+    border-style: solid;
+    border-color: #D6A800;
+    padding: 10px;
+}
+
+a {
+    color: cadetblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: cadetblue;
+}
+
+a:visited {
+    color: cadetblue;
+}
