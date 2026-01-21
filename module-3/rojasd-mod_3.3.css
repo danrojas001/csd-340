@@ -1,0 +1,58 @@
+#container.h1 {
+    text-align: center;
+}
+
+#leftDiv {
+    width: 45%;
+    float: left;
+    border: 1px solid red;
+    border-radius: 15px;
+}
+
+#rightDiv {
+    width: 45%;
+    float: right;
+    border: 1px dashed red;
+    border-radius: 15px;
+}
+
+#lastDiv {
+    width: 100%;
+    margin-top: 60%;
+    margin-bottom: 20px;
+    float: right;
+}
+
+#landingLink {
+    float: right;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    width: 500;
+}
+
+ol {
+    font-weight: 300;
+    padding: 10px;
+    list-style-position: inside;
+
+}
+
+ul {
+    font-weight: 300;
+    padding: 10px;
+    list-style: upper-roman;
+    list-style-position: inside;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
