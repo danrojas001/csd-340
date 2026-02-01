@@ -1,0 +1,45 @@
+h1 {
+    text-align: center;
+}
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 10%;
+}
+
+h3 {
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: .75em;
+}
+
+#lastDiv {
+    width: 100%;
+    margin-top: 60%;
+    margin-bottom: 20px;
+    float: right;
+}
+
+#landingLink {
+    float: right;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
