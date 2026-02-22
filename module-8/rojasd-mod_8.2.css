@@ -1,0 +1,120 @@
+header {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: cornflowerblue;
+    border-bottom: 15px solid orange;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: gray;
+    color: black;
+}
+
+#container {
+    margin: 2% 5% 100px 5%;
+    padding: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+    transition: box-shadow .3s ease-in-out;
+    width: 50%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    color: black;
+    font-weight: 400;
+}
+
+.card-content {
+    padding: 2px 16px;
+}
+
+#movies {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#movies th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: cornflowerblue;
+    color: white;
+    border: 1px solid #ddd;
+    padding: 8px;
+
+}
+
+#movies tr td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+footer {
+    background-color: cornflowerblue;
+    font-weight: 400;
+    float: right;
+    padding-right: 10px;
+    font-style: italic;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer>#Copyright {
+    float: left;
+    padding-left: 10px;
+}
+
+footer p {
+    color: white;
+    font-weight: 400;
+    float: right;
+    padding-right: 10px;
+    font-style: italic;
+}
+
+footer a {
+    color: white;
+    font-weight: 400;
+    float: right;
+    padding-right: 10px;
+    font-style: italic;
+}
+
+footer a:link {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
