@@ -1,0 +1,59 @@
+<!-- Dan Rojas -->
+<!-- mod 9.3 -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>CSD 340 Development with HTML and CSS</title>
+    <link rel="stylesheet" href="rojasd-mod9.3.css">
+    <meta name="description" content="mod 9.3">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Dan Rojas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        var blank1 = "Omaha"
+        var blank2 = "traffic"
+        var blank3 = "hobby"
+        var blank4 = "family"
+    </script>
+</head>
+<body>
+    <div id="container"></div>
+    <h1>Assignment 9.3: JavaScript - Part 1</h1>
+    <h2>Chapter 1</h2>
+    <p class="intro">
+        <span class="sentence">My name is Dan Rojas. </span>I live in <span id="omaha">_____</span>. I am enrolled in a
+        software dev course at BU.
+    </p>
+    <p>
+        I grew up in LA. The <span id="traffic">_____</span> there is much worse than Omaha's. The weather in LA was
+        also much warmer year round.
+    </p>
+    <p>
+        My primary <span id="hobby">_____</span> was and still is playing video games. I enjoy all kinds but fighting
+        games are probably my least favorite. My favorite are RPGs.
+    </p>
+    <p>
+        I am geographically distant from all of my <span id="family">_____</span>. They all remained on the West Coast.
+        I enjoy the peace and quiet.
+    </p>
+    <div>
+        <p class="button-container"><button type="button"
+                onclick="document.getElementById('omaha').innerHTML=blank1">1st Blank</button></p>
+        <p class="button-container"><button type="button"
+                onclick="document.getElementById('traffic').innerHTML=blank2">2nd Blank</button></p>
+        <p class="button-container"><button type="button"
+                onclick="document.getElementById('hobby').innerHTML=blank3">3rd Blank</button></p>
+        <p class="button-container"><button type="button"
+                onclick="document.getElementById('family').innerHTML=blank4">4th Blank</button></p>
+    </div>
+    <hr>
+    <address>
+        <p>
+            <a href="https://www.bellevue.edu/">Bellevue University</a>
+        </p>
+        <p>1000 Bruin Blvd</p>
+        <p>Bellevue, NE 68005</p>
+    </address>
+</body>
+</html>
