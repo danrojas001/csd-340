@@ -1,0 +1,66 @@
+<!-- Dan Rojas -->
+<!-- mod 10.3 -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>CSD 340 Development with HTML and CSS</title>
+    <link rel="stylesheet" href="rojasd-mod10.3.css">
+    <meta name="description" content="mod 10.3">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Dan Rojas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function hawaiiSwap() {
+            let img = document.getElementById("Hawaii")
+
+            if (img.src.includes("Hawaii-sunsetBW.jpg")) {
+                img.src = "AnoleHello.jpg";
+            } else {
+                img.src = "Hawaii-sunsetBW.jpg";
+            }
+        }
+
+        function sandsSwap() {
+            let img = document.getElementById("Sands")
+
+            if (img.src.includes("WhitesandsBW.jpg")) {
+                img.src = "AnoleHello.jpg";
+            } else {
+                img.src = "WhitesandsBW.jpg";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container"></div>
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    <div>
+        <a href=# onmouseover="Hawaii.src='Hawaii-sunsetBW.jpg';" onmouseout="Hawaii.src='Hawaii-sunset.jpg';">
+            <img id="Hawaii" style="width: 750px; height: auto;" src="Hawaii-sunset.jpg" alt="Hawaiian sunset"
+                onclick="hawaiiSwap()">
+        </a>
+    </div>
+    <div onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';">
+        Run your mouse over the image to change.
+    </div>
+    <br>
+    <div>
+        <a href=# onmouseover="Sands.src='WhitesandsBW.jpg';" onmouseout="Sands.src='Whitesands.jpg';">
+            <img id="Sands" style="width: 750px; height: auto;" src="Whitesands.jpg" alt="White Sands NM"
+                onclick="sandsSwap()">
+        </a>
+    </div>
+    <div onmouseover="this.style.color='blue';" onmouseout="this.style.color='black';">
+        Run your mouse over the image to change.
+        <hr>
+    </div>
+    <div>
+        Right-click and select View Source for more details.
+        <br>
+        These are actually my photos btw.
+    </div>
+
+</body>
+</html>
