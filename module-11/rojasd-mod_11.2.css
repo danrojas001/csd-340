@@ -1,0 +1,64 @@
+/* Dan Rojas
+mod 11.2
+14-Mar-26 */
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+#card {
+    border-style: ridge;
+    padding: 30px;
+    border-radius: 10px;
+    border-color: slategray;
+    background-color: aqua;
+    background-image: linear-gradient(to bottom right, aqua, aquamarine);
+}
+
+#textContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: sans-serif;
+}
+
+#inputField {
+    padding: 10px 15px;
+    font-size: large;
+    border-radius: 5px;
+}
+
+#btnContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    margin-top: 15px;
+    border-radius: 5px;
+    border-color: slategray;
+    padding: 5px;
+    font-family: sans-serif;
+    font-size: large;
+}
+
+#addBtn {
+    background-color: springgreen;
+}
+
+#rmvBtn {
+    background-color: orangered;
+}
+
+#srtBtn {
+    background-color: cornflowerblue;
+}
+
+li {
+    font-family: sans-serif;
+    font-size: large;
+    margin-bottom: 15px;
+}

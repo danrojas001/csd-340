@@ -1,0 +1,83 @@
+<!-- Dan Rojas -->
+<!-- mod 11.2 -->
+<!-- 14-Mar-26 -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="rojasd-mod_11.2.css">
+</head>
+
+<body>
+    <header>
+        <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    </header>
+    <div id="container">
+        <div id="card">
+            <div id="textContainer">
+                <h2>Enter a task. Use the buttons to add, sort, or remove tasks.</h2>
+                <input id="inputField" type="text" placeholder="Enter a task">
+            </div>
+            <div id="btnContainer">
+                <button id="addBtn" onclick="add()">Add</button>
+                <button id="rmvBtn" onclick="remove()">Delete Last Entry</button>
+                <button id="srtBtn" onclick="sort()">Sort</button>
+            </div>
+            <hr>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+
+    <script defer>
+        let taskArray = [];
+        const inputField = document.getElementById("inputField");
+        const addBtn = document.getElementById("addBtn");
+        const rmvBtn = document.getElementById("rmvBtn");
+        const srtBtn = document.getElementById("srtBtn");
+        const taskList = document.getElementById("taskList");
+
+        function add() {
+            const newTask = inputField.value.trim();
+
+            if (newTask === "" || newTask == null) {
+                alert("Nothing to add.");
+                return
+            }
+            alert("Adding new task:\n \"" + newTask + "\"");
+            taskArray.push(newTask);
+            display();
+            inputField.value = "";
+        }
+
+        function remove() {
+            if (taskList.children.length === 0) {
+                alert("Nothing to remove.");
+                return
+            }
+            alert("Removing:\n" + taskArray[taskArray.length - 1]);
+            taskArray.pop();
+            display();
+        }
+
+        function sort() {
+            if (taskList.children.length === 0) {
+                alert("Nothing to sort.");
+                return
+            }
+            alert("Sorted alphanumerically.");
+            taskArray.sort();
+            display();
+        }
+
+        function display() {
+            taskList.innerHTML = "";
+
+            taskArray.forEach(function (task) {
+                const li = document.createElement("li");
+                li.textContent = task;
+                taskList.appendChild(li);
+            })
+        }
+    </script>
+</body>
